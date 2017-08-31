@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.amit.http_post.Registration">
+
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Firstname"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+
+
+
+        />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lastname"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/phoneno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email id"
+        android:inputType="textWebEmailAddress"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:layout_gravity="center_horizontal"
+        android:text="Registration"
+        android:background="@drawable/custom_button"
+
+        />
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

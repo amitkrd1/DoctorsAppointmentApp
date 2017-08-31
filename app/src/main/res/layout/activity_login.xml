@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amit.http_post.Login">
+
+    <TextView
+        android:id="@+id/loginpage"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user login"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginpage"
+        >
+    <EditText
+        android:id="@+id/un"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="username"
+        android:textColorHint="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/userpwd"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_below="@+id/TextInputLayout"
+        >
+
+
+        <EditText
+            android:id="@+id/pswd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:hint="Password"
+            android:textColorHint="@color/black"
+            android:inputType="textPassword"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/loginb"
+        android:layout_below="@+id/userpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="submit"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button"
+        
+        />
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Reg"
+        android:layout_centerHorizontal="true"
+        android:text="Not Registered yet ?"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <Button
+
+        android:id="@+id/Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Register"
+        android:background="@drawable/custom_button"
+
+        />
+
+
+</RelativeLayout>
